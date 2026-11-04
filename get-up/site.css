@@ -167,3 +167,8 @@ a {
   font-size: 14px;
   line-height: 1.45;
 }
+
+.card {
+  font-variant-numeric: tabular-nums;
+  letter-spacing: 1px;
+}
