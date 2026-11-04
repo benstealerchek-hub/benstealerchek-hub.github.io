@@ -122,3 +122,48 @@ a {
 .js article:not(.shown) {
   display: none;
 }
+
+/* Download button and QR code. */
+.download {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  gap: 24px;
+  margin: 0 0 12px;
+}
+
+.button {
+  display: inline-block;
+  padding: 12px 22px;
+  border-radius: 12px;
+  background: var(--accent);
+  color: #fff;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.button:active {
+  filter: brightness(0.9);
+}
+
+/* The QR is black on white; keep a white card under it in dark mode too. */
+.qr {
+  margin: 0;
+  max-width: 200px;
+}
+
+.qr img {
+  display: block;
+  width: 180px;
+  height: 180px;
+  padding: 10px;
+  background: #fff;
+  border-radius: 12px;
+}
+
+.qr figcaption {
+  margin-top: 8px;
+  color: var(--muted);
+  font-size: 14px;
+  line-height: 1.45;
+}
